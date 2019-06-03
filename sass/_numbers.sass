@@ -1,0 +1,35 @@
+.numbers
+	background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+	.container
+		display: flex
+		justify-content: center
+		padding-top: 69px
+		.numbers-punct
+			&:not(.last)
+				margin-right: 100px
+			&__icon
+				margin-bottom: 30px
+			&__number
+				color: $text-color-light
+				font-family: 'montserrat'
+				font-size: 48px
+				font-weight: 400
+			p
+				font-family: 'montserrat'
+				font-size: 14px
+				font-weight: 300
+				text-transform: uppercase
+				color: $text-color-hover
+				position: relative
+				padding-bottom: 62px
+				&:after
+					background-color: $text-color-light
+					display: block
+					content: ""
+					height: 2px
+					width: 30px
+					left: 50%
+					position: absolute
+					transform: translateX(-50%)
+					top: 45px
+

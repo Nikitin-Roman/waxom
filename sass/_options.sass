@@ -1,0 +1,40 @@
+.options
+	padding-top: 80px
+	&-image
+		margin-bottom: 29px
+	&-header
+		font-family: 'raleway'
+		font-size: 22px
+		font-weight: 400
+		color: $text-color-header
+		margin-bottom: 19px
+	&-description
+		position: relative
+		font-family: 'montserrat'
+		font-size: 14px
+		font-weight: 300
+		line-height: 24px
+		color: $text-color-desc
+		display: inline-block
+		text-decoration: none
+		cursor: pointer
+		&:hover
+			text-decoration: none
+			color: $text-color-desc
+		&:after
+			background-color: $text-color-hover
+			display: block
+			content: ""
+			height: 2px
+			width: 0%
+			left: 50%
+			position: absolute
+			transition: width .3s ease-in-out
+			transform: translateX(-50%)
+			top: 100px
+		&:hover
+			&:after
+				width: 50%
+		&:focus
+			&:after
+				width: 50%

@@ -1,0 +1,130 @@
+body
+	margin: 0
+.header
+	position: relative
+	width: 100%
+	height: 100vh
+	nav
+		position: absolute
+		top: 0
+		img
+			top: 40px
+			position: absolute
+		.header-link
+			margin-left: 350px
+			margin-top: 50px
+			li
+				.header-icon1
+					postion: absolute
+					top: 46px
+					right: -90px
+				.header-icon2
+					postion: absolute
+					top: 46px
+					right: -140px
+				a
+					postion: absolute
+					font-family: 'montserrat'
+					color: $text-color-light
+					font-size: 14px
+					font-weight: 300
+					margin-right: -10px
+					&:hover
+						color: $text-color-hover
+	.header-slider
+		width: 100%
+		height: 100%
+		.header-background
+			width: 100%
+			height: 100vh
+			background: #a1a1a1
+			background-image: url("../img/header/header.jpg")
+			background-size: cover
+			text-align: center
+			position: absolute
+		.header-background1
+			width: 100%
+			height: 100vh
+			background: #a1a1a1
+			background-image: url("../img/header/header1.jpg")
+			background-size: cover
+			text-align: center
+			position: absolute
+		.header-background2
+			width: 100%
+			height: 100vh
+			background: #a1a1a1
+			background-image: url("../img/header/header2.jpg")
+			background-size: cover
+			text-align: center
+			position: absolute
+		.header-background3
+			width: 100%
+			height: 100vh
+			background: #a1a1a1
+			background-image: url("../img/header/header3.jpg")
+			background-size: cover
+			text-align: center
+			position: absolute
+.header-text
+	top: -100%
+	transform: translateY(100%)
+	margin: 0 auto
+	.header-text__firstrow
+		font-family: 'raleway'
+		font-weight: 500
+		font-size: 36px
+		margin-bottom: 14px
+	.header-text__secondrow
+		font-family: 'raleway'
+		font-weight: 400
+		font-size: 52px
+		margin-bottom: 19px
+	.header-text__thirdrow
+		font-weight: 300
+		font-size: 16px
+		line-height: 24px
+		margin-bottom: 52px
+	.header-text__button
+		button
+			padding: 16px 38px
+.slick-dots 
+	li 
+		button
+			&:before
+				color: white
+				position: absolute
+				top: -50px
+				font-size: 20px
+				line-height: 20px
+				border: 1px solid white
+				border-radius: 50px
+				opacity: 0.5
+.slick-next
+	position: absolute
+	left: 100px
+.slick-prev
+	position: absolute
+	left: 200px
+.arrow
+	position: absolute
+	top: 50%
+	transform: scaleY(-50%)
+	z-index: 90
+	border: none
+	width: 2rem
+	height: 2rem
+	outline: none
+	cursor: pointer
+.next
+	background: url(../img/header/right-white.png) center no-repeat
+	right: 100px
+	transition: background .2s
+	&:hover
+		background: url(../img/header/right-hover.png) center no-repeat
+.prev
+	background: url(../img/header/left-white.png) center no-repeat
+	left: 100px
+	transition: background .2s
+	&:hover
+		background: url(../img/header/left-hover.png) center no-repeat

@@ -1,0 +1,148 @@
+.ourProjects
+	padding-top: 81px
+	&-text
+		&__header
+			color: $text-color-header
+			font-family: 'raleway'
+			font-size: 30px
+			font-weight: 400
+			margin-bottom: 24px
+		&__desc
+			color: $text-color-desc
+			font-family: 'montserrat'
+			font-size: 16px
+			font-weight: 300
+			margin-bottom: 40px
+	&-tab
+		ul
+			margin-left: 282px
+			.nav-link
+				padding: 5px 27px
+				border-radius: 3px
+				margin-right: 10px
+				background-color: $text-color-light
+				color: $text-color-desc
+			.nav-link.active
+				background-color: $button-color
+				color: $text-color-light
+		.tab-content
+			position: relative
+			.tabAfter
+				width: 370px
+				height: 237px
+				background-size: cover
+				&:after
+					left: 40px
+					bottom: 122px
+					content: ""
+					position: absolute
+					height: 0
+					width: 0
+					border-right: 15px solid transparent
+					border-left: 15px solid transparent
+					border-bottom: 10px solid $text-color-light
+			.col-4
+				cursor: pointer
+				position: relative
+				.mouse-hover1
+					position: absolute
+					top: 106px
+					left: 144px	
+					display: none
+				.mouse-hover2
+					position: absolute
+					top: 106px
+					left: 198px
+					display: none
+			.tab1
+				&:hover
+					.tabAfter1
+						&:after
+							border-bottom: 10px solid #362f2d
+							bottom: 0px
+						filter: grayscale(100%)
+					.block1
+						background-color: #362f2d
+			.tab2
+				&:hover
+					.tabAfter2
+						&:after
+							border-bottom: 10px solid #362f2d
+							bottom: 0px
+						filter: grayscale(100%)
+					.block2
+						background-color: #362f2d
+			.tab3
+				&:hover
+					.tabAfter3
+						&:after
+							border-bottom: 10px solid #362f2d
+							bottom: 0px
+						filter: grayscale(100%)
+					.block3
+						background-color: #362f2d
+			.tab4
+				&:hover
+					.tabAfter4
+						&:after
+							border-bottom: 0px solid #362f2d
+							bottom: 0px
+						filter: grayscale(100%)
+					.block4
+						background-color: #362f2d
+			.tab5
+				&:hover
+					.tabAfter5
+						&:after
+							border-bottom: 10px solid #362f2d
+							bottom: 0px
+						filter: grayscale(100%)
+					.block5
+						background-color: #362f2d
+			.tab6
+				&:hover
+					.tabAfter6
+						&:after
+							border-bottom: 10px solid #362f2d
+							bottom: 0px
+						filter: grayscale(100%)
+					.block6
+						background-color: #362f2d
+			.tabAfter1
+				background: url(../img/ourProjects/mobile.jpg)
+			.tabAfter2
+				background: url(../img/ourProjects/photo2.png)
+			.tabAfter3
+				background: url(../img/ourProjects/3.jpg)
+			.tabAfter4
+				background: url(../img/ourProjects/4.jpg)
+			.tabAfter5
+				background: url(../img/ourProjects/5.jpg)
+			.tabAfter6
+				background: url(../img/ourProjects/6.jpg)
+			.ourProjects-tab__block
+				transition: all .3s ease-out
+				width: 370px
+				padding-left: 29px
+				padding-top: 30px
+				padding-bottom: 27px
+				.ourProjects-tab__header
+					color: $text-color-hover
+					font-family: 'raleway'
+					font-size: 20px
+					font-weight: 500
+					margin-bottom: 14px
+				.ourProjects-tab__desc
+					color: $text-color-hover
+					font-family: 'montserrat'
+					font-size: 14px
+					font-weight: 300
+	.ourProject-button
+		margin-top: 40px
+		margin-left: 480px
+		margin-bottom: 80px
+		button
+			padding: 10px 45px
+
+
+

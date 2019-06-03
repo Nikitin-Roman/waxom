@@ -1,0 +1,102 @@
+.posts
+	padding-top: 82px
+	&-text
+		&__header
+			color: $text-color-header
+			font-family: 'raleway'
+			font-size: 30px
+			font-weight: 400
+			margin-bottom: 30px
+		&__desc
+			color: $text-color-desc
+			font-family: 'montserrat'
+			font-size: 16px
+			font-weight: 300
+			line-height: 28px
+			padding-bottom: 40px
+			width: 757px
+			margin: 0 auto
+	.posts-slider
+		display: flex
+		justify-content: space-between
+		.posts-slide
+			width: 370px
+			cursor: pointer
+			&:hover
+				img
+					transition: all .3s
+					filter: grayscale(100%)
+				.posts-slide__date
+					transition: all .3s
+					background-color: $text-color-hover
+				.posts-slide__month
+					transition: all .3s
+					background-color: #a48d72
+				.posts-slide__text
+					transition: all .3s
+					background-color: #362f2d
+					.posts-slide__header
+						transition: all .3s
+						color: $text-color-hover
+					.posts-slide__desc
+						transition: all .3s
+						color: $text-color-light
+			&__img
+				display: inline-block
+				position: relative
+				img
+					width: 360px
+					height: 220px
+				.posts-slide__date
+					position: absolute
+					top: 20px
+					left: 20px
+					padding: 5px 11px
+					background-color: $color-date
+					border-top-left-radius: 4px
+					border-top-right-radius: 4px
+					font-family: 'montserrat'
+					font-size: 24px
+					font-weight: 300
+					color: $text-color-light
+				.posts-slide__month
+					position: absolute
+					top: 60px
+					left: 20px
+					border-bottom-left-radius: 4px
+					border-bottom-right-radius: 4px
+					background-color: $color-month
+					padding: 4px 14px 4px 13px
+					color: $text-color-light
+					font-family: 'montserrat'
+					font-size: 12px
+					font-weight: 400
+			&__text
+				margin-left: 5px
+				width: 360px
+				padding-top: 30px
+				padding-bottom: 33px
+				.posts-slide__header
+					color: $text-color-header
+					font-family: 'raleway'
+					font-size: 20px
+					font-weight: 500
+					margin-bottom: 19px
+				.posts-slide__desc
+					color: $text-color-desc
+					font-family: 'montserrat'
+					font-size: 14px
+					font-weight: 300
+					width: 297px
+					margin: 0 auto
+					margin-bottom: 27px
+					text-align: justify
+				.posts-slide__more
+					color: $text-color-hover
+					font-family: 'montserrat'
+					font-size: 14px
+					font-weight: 300
+					margin-left: -201px
+					i
+						color: $text-color-hover
+						margin-left: 9px
